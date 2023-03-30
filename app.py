@@ -1,0 +1,24 @@
+import os
+
+def processar_resposta(resposta, nome):
+    if resposta == '1':
+        print(f'{os.linesep}{nome}, Se pensa em diversão, sim vale a pena jogar com amigos.{os.linesep}')
+    elif resposta == '2':
+        print(f'{os.linesep}{nome}, No League of Legends são 5 rotas, rota do topo (top): a rota do topo é geralmente ocupada por um lutador (bruiser) ou um tanque (tank). O objetivo do jogador nesta rota é controlar a área e garantir a segurança da equipe. Eles geralmente lutam contra o jogador adversário da rota do topo, tentando evitar que eles ganhem vantagem no jogo.{os.linesep} Rota do meio (mid): a rota do meio é geralmente ocupada por um campeão mago (mage) ou assassino (assassin). O objetivo do jogador nesta rota é controlar o centro do mapa e ajudar a equipe a garantir objetivos como o Dragão ou Arauto. O jogador nesta posição geralmente tem um grande impacto no jogo devido à sua capacidade de causar muito dano em pouco tempo.{os.linesep} Rota inferior (bot): a rota inferior é geralmente ocupada por dois jogadores, um atirador (marksman) e um suporte (support). O objetivo do jogador atirador é causar dano à torre inimiga e eliminar os campeões adversários, enquanto o jogador suporte ajuda a proteger o atirador e controlar a visão do mapa. Esta rota é vital para o controle do mapa e do jogo, pois a equipe que vencer esta rota tem uma vantagem significativa na partida.{os.linesep} Além dessas rotas principais, há também a selva (jungle), onde um jogador joga como um campeão que não ocupa uma rota específica. A função do jogador na selva é ajudar as rotas a conseguir objetivos e controlar o mapa, bem como eliminar monstros neutros para ganhar experiência e ouro. {os.linesep}')
+    elif resposta == '3':
+        print(f'{os.linesep}{nome}, Existem vários campeões no League of Legends que são considerados difíceis de jogar devido às suas mecânicas complicadas ou à necessidade de ter um bom conhecimento do jogo para usá-los efetivamente. No entanto, é difícil determinar um campeão específico como o mais difícil, pois depende da habilidade e experiência do jogador.{os.linesep} Algumas opções de campeões considerados mais difíceis de jogar incluem: Azir - um campeão mago que é muito dependente de sua habilidade de controle de tropas e posicionamento. Ele requer muita habilidade mecânica para usar seus combos de forma eficaz.{os.linesep} Lee Sin - um campeão jungler que é conhecido por suas mecânicas complicadas e sua alta mobilidade. Ele tem muitas habilidades diferentes para usar e requer um bom conhecimento do jogo para usar suas habilidades de forma eficaz.{os.linesep} Yasuo - um campeão lutador que tem uma alta taxa de jogabilidade devido à sua dependência de combos e sua habilidade de dano de habilidade. Ele requer uma boa compreensão do jogo e do timing para usar suas habilidades de forma eficaz.{os.linesep} Riven - um campeão lutador que tem muitas habilidades diferentes para usar e requer uma boa habilidade mecânica para usar seus combos e habilidades de forma eficaz.{os.linesep}Em resumo, esses campeões são considerados difíceis de jogar devido às suas habilidades mecânicas complicadas e à necessidade de um bom conhecimento do jogo para usá-los efetivamente. No entanto, é importante lembrar que a dificuldade de jogar um campeão pode variar dependendo da experiência e habilidade do jogador.{os.linesep}')
+    elif resposta == '4':
+        print(f'{os.linesep}{nome}, A quantidade de campeões no League of Legends está em constante evolução, com novos campeões sendo adicionados ao jogo regularmente. Até o momento, a partir de março de 2023, existem 159 campeões no jogo.{os.linesep} No entanto, é importante observar que esse número pode mudar a qualquer momento, já que novos campeões são adicionados regularmente e outros podem ser removidos ou reworkados. O League of Legends é um jogo dinâmico que continua evoluindo e expandindo seu elenco de personagens, proporcionando novas experiências de jogo para os jogadores.{os.linesep}')
+    else:
+        print('Digite apenas 1, 2, 3, 4')
+def start():
+    print('Olá, seja bem-vindx')
+    nome = input('Digite seu nome: ')
+    email = input('Digite seu e-mail: ')
+    resposta = input(f'O que gostaria de saber hoje?{os.linesep}[1] - Vale a pena jogar League of Legends?{os.linesep}[2] - Qual rota você mais divertida de jogar?{os.linesep}[3] - Qual champion mais dificil?{os.linesep}[4] - Quantos champions tem no jogo hoje em dia?{os.linesep}')
+    while True:
+        resposta = input(f'O que gostaria de saber hoje?{os.linesep}[1] - Vale a pena jogar League of Legends?{os.linesep}[2] - Qual rota você mais divertida de jogar?{os.linesep}[3] - Qual champion mais dificil?{os.linesep}[4] - Quantos champions tem no jogo hoje em dia?{os.linesep}')
+        processar_resposta(resposta, nome)
+
+if __name__ == '__main__':
+    start()
